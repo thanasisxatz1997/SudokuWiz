@@ -1,0 +1,36 @@
+.gameContainerClass
+{
+    box-sizing: content-box;
+    margin:auto;
+    margin-top: 5%;
+    border: black solid 3px;
+    border-radius: 5px;
+    background-color: white;    
+}
+.sudokuLine
+{
+    display: flex;
+    height: 50px;
+}
+.sudokuSquare
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 150%;
+    width: 50px;
+    height: 50px;
+    border: black solid 1px;
+}
+
+.sudokuSquareStandard
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 150%;
+    width: 50px;
+    height: 50px;
+    border: black solid 1px;
+    color: rgb(0, 89, 255);
+}

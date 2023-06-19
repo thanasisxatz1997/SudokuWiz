@@ -1,0 +1,4 @@
+function HomeButton()
+{
+    location.replace("./")
+}

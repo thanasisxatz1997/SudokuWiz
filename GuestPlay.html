@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="landingPageStyling.css">
+        <link rel="stylesheet" href="textDropAnim.css">
+        <link rel="stylesheet" href="gameStyling.css">
+        <link rel="stylesheet" href="navBarStyling.css">
+        <link rel="stylesheet" href="gameStateBarStyling.css">
+        <script src="LoginButtonFunctions.js"></script>
+        <script src="SudokuGameFunctions.js" defer></script>
+        <script src="NavBarButtonFunctions.js" defer></script>
+    </head>
+    <title>
+        SudokuWiz
+    </title>
+    <body>
+        <div id="navigationBar" class="navBar">
+            <button class="NavBarButton" onclick="HomeButton()"><a>Home</a></button>
+        </div>
+        <div id="gameContainer" class="gameContainerClass">
+        </div>
+        <div id="gameStateBar" class="GameStateBar">
+            <div id="gameTimer" class="GameTimer"></div>
+            <div id="dropDownNumbersButton" class="DropDownNumbersButton">1
+                <div class="dropDownNumbersContent" class="DropDownNumbersContent">
+                    <button class="SingleDropDownButton" onclick="ChoseNumber(1)">1</button>
+                    <button class="SingleDropDownButton" onclick="ChoseNumber(2)">2</button>
+                    <button class="SingleDropDownButton" onclick="ChoseNumber(3)">3</button>
+                    <button class="SingleDropDownButton" onclick="ChoseNumber(4)">4</button>
+                    <button class="SingleDropDownButton" onclick="ChoseNumber(5)">5</button>
+                    <button class="SingleDropDownButton" onclick="ChoseNumber(6)">6</button>
+                    <button class="SingleDropDownButton" onclick="ChoseNumber(7)">7</button>
+                    <button class="SingleDropDownButton" onclick="ChoseNumber(8)">8</button>
+                    <button class="SingleDropDownButton" onclick="ChoseNumber(9)">9</button>
+                </div>
+            </div>
+            <button class="GameStateBarButton" onclick="Done()"><a>Done</a></button>
+        </div>
+    </body>
+</html>

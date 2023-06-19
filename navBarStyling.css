@@ -1,0 +1,50 @@
+.navBar
+{
+    background-color: rgba(95, 95, 95, 0.801);
+    height: 10%;
+    border-radius: 10px;
+}
+
+.NavBarButton
+{
+    border-color: transparent;
+    color:rgb(71, 71, 71);
+    position: relative;
+    text-align:center;
+    font-variant: small-caps;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 150%;
+    font-weight: 900;
+    border-radius: 50px;
+    width: 10%;
+    height: 70%;
+    margin: auto;
+    -ms-transform: translate(22%,22%);
+    transform: translate(22%,22%);
+    background: rgb(116, 113, 119);
+    background: radial-gradient(circle, rgb(171, 210, 255) 0%, rgb(197, 197, 197) 100%);
+}
+
+.NavBarButton::before
+{
+    border-radius: 50%;
+    position: absolute;
+    border-radius: 50px;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background: radial-gradient(circle, rgb(197, 197, 197) 0%, rgb(171, 210, 255) 100%);
+    transition: opacity 0.5s linear;
+    opacity: 0;
+}
+
+.NavBarButton:hover
+{
+    transition: color 0.5s linear;
+    transition: font-size 0.2s linear;
+    font-size: 170%;
+    color:rgb(67, 128, 197);
+}
